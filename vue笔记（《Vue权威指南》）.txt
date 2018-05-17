@@ -1,0 +1,14 @@
+1、limitBy、filterBy、orderBy三个过滤器处理的表达式必须是数组。
+
+2、v-for="item in items | filterBy 'hello' "在每个数组元素中搜索'hello'
+     v-for="item in items | filterBy 'hello' in 'name' "在每个数组元素的'name'中搜索'hello'
+
+3、html不区分大小写，名字形式为camelCase的props用作特性时，需要转换为kebab-case形式。
+
+4、当混合对象与组件包含同名选项时，这些选项将以适当的策略合并。同名钩子函数被并入一个数组中，因而都会被调用。混合的钩子将在组件自己的钩子之前调用。
+
+5、当混合对象与组件包含同名的methods、component、directives,优先使用组件自身的。
+
+6、inline-template的优先级比template高。inline-template把它的内容当作模版，而不是分发内容。
+
+7、安装特定的模版，vue-cli init webpack-simple#1.0 my-project

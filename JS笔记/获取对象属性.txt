@@ -1,0 +1,5 @@
+1、 offsetWidth实际获取的是盒模型(width+border + padding)
+
+      offsetLeft = left + marginLeft
+
+     offsetTop = top +marginTop

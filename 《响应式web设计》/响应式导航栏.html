@@ -1,0 +1,72 @@
+﻿<!DOCTYPE>
+<html>
+<head>
+<style>
+@media screen and (max-width:800px)
+{
+  .small-menu
+  {
+    display:inline;
+  }
+  .large-menu
+  {
+    display:none;
+  }
+} 
+@media screen and (min-width:800px)
+{
+ .small-menu
+  {
+    display:none;
+  } 
+  .large-menu
+  {
+    display:inline;
+  }
+  .large-menu li
+  {
+    display:inline-block;
+	list-style:none;
+	background: darkblue;
+	width:150px;
+	height:20px;
+	line-height:20px;
+	text-align:center;
+	border:1px solid white;
+	margin-left:-10px;
+  }
+   .large-menu li:hover
+   {
+     border:1px solid white;
+   }
+  .large-menu li a
+  {
+    background: darkblue;
+	color:white;
+	text-decoration:none;
+  }
+}
+</style>
+</head>
+<script type="text/javascript"></script>
+<body>
+<div class="small-menu">
+  <form>
+    <select name="URL" onchange="window.location.href=this.form.URL.options[this.form.URL.selectedIndex].value">
+	  <option value="blog.html">My Blog</option>
+	  <option value="home.html">My Home Page</option>
+	  <option value="tutorials.html">My Tutorials</option>
+	</select>
+  </form>
+</div>
+<div class="large-menu">
+  <form>
+    <ul>
+	   <li><a href="blog.html">My Blog</a></li>
+	   <li><a href="home.html">My Home</a></li>
+	   <li><a href="tutorials.html">My Tutorials</a></li>
+	</ul>
+  </form>
+</div>
+</body>
+</html>

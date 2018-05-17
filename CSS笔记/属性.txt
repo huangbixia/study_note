@@ -1,0 +1,9 @@
+1、
+backface-visibility 属性定义当元素不面向屏幕时是否可见。
+如果在旋转元素不希望看到其背面时，该属性很有用。
+默认值：	visible
+继承性：	no
+版本：	CSS3
+JavaScript 语法：	object.style.backfaceVisibility="hidden"
+
+2、pointer-events：none禁止点击事件

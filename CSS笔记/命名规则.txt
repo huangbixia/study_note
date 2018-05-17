@@ -1,0 +1,4 @@
+1、<div class="div1"></div>
+css:
+div .div1{}/*无效*/
+div.div1{}/*有效，中间不能出现空格*/

@@ -1,0 +1,43 @@
+1、git clone url(url在github项目上复制)
+2、给项目设置贡献者和贡献者邮箱
+首先进入项目 cd 文件名
+git config --global user.name "huangbixia"
+git config --global user.email "15220007752@163.com"
+3、查看分区状态
+git status
+4、把工作区的文件添加到暂存区
+git add 文件(git add .   提交所以修改过的文件)
+5、把暂存区的文件提交到版本库
+git commit（git commit -m "这里写注释，那样就不用打开记事本"）
+git push（把文件提交到网站上）
+6、查看提交历史
+git log
+7、把暂存区的文件撤回到工作区
+git reset HEAD 文件名
+8、把工作区修改的文件撤回修改
+git checkout --文件名
+9、文件路径退回到主目录
+cd..
+10、更新本地
+git fetch (不合并从远端拉取过来的文件，然后查看冲突代码：git diff master origin/master)
+手动合并远端文件 git merge origin/master
+解决完冲突，可以再次提交
+git pull(自动合并)
+11、快速提交
+git commit -a -m "texttext"
+12、查看分支
+git branch
+13、创建分支
+git branch 分支名
+14、切换分支
+git checkout 分支名
+15、同时创建分支并切换
+git checkout -b 分支名
+16、合并分支修改的内容
+git merge 分支名
+17、查看合并（没有合并）的分支
+合并git branch --merged（若合并了，则可以删除分支 git  branch -d 分支名）
+没有合并git branch --no--merged（删除没有合并的分支 git branch -D 分支名）
+
+18、分支提交代码到github
+git push origin 分支名
