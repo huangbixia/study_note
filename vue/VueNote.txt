@@ -1,0 +1,10 @@
+1、npm run dev命令是可以配置的，在package.json中设置
+
+2、@click.stop  // 阻止冒泡
+
+3、
+// 给this.food对象赋值一个属性，且要同步影响到父层模版的数据变化（this.food一般为props的值）
+this.$set(this.food, 'count', 1)  // 增加count属性，赋值为1
+
+4、getBoundingClientRect
+
